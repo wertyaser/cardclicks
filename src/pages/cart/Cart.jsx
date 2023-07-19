@@ -21,8 +21,11 @@ const Cart = () => {
       progress: undefined,
       theme: "light",
     });
-    clearCart();
-    navigate("/");
+    navigate("/"); // Navigate to the home page
+    setTimeout(() => {
+      clearCart(); // Clear the cart items
+      window.location.reload(); // Refresh the page
+    }, 1500);
   };
 
   return (
