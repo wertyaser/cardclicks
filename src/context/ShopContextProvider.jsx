@@ -19,6 +19,7 @@ const ShopContextProvider = (props) => {
     setCartItems([]);
   };
 
+  //total amount
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
@@ -29,15 +30,15 @@ const ShopContextProvider = (props) => {
     }
     return totalAmount;
   };
-
+  //add to cart
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
-
+  //remove from cart
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
-
+  //update cart item count
   const updateCartItemCount = (newAmount, itemId) => {
     setCartItems((prev) => ({
       ...prev,
