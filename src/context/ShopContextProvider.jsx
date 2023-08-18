@@ -45,7 +45,8 @@ const ShopContextProvider = (props) => {
       [itemId]: newAmount,
     }));
   };
-
+  
+  //contextValue
   const contextValue = {
     cartItems,
     addToCart,
