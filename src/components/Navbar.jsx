@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white border-gray-200">
-        <div className="max-w-5xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-1xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link className="flex items-center">
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               CardClicks
