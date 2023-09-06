@@ -2,7 +2,12 @@ import React from "react";
 import { products } from "../../products";
 import Product from "./Product";
 import { Link } from "react-router-dom";
-import { FacebookLogo, GithubLogo, InstagramLogo } from "phosphor-react";
+import {
+  FacebookLogo,
+  GithubLogo,
+  InstagramLogo,
+  TwitterLogo,
+} from "phosphor-react";
 const Shop = () => {
   return (
     <>
@@ -21,6 +26,9 @@ const Shop = () => {
         <div className=" flex justify-center gap-10 my-10">
           <Link to="https://github.com/LeonielGNacman">
             <GithubLogo size={32} />
+          </Link>
+          <Link to="https://twitter.com/wertyaserr">
+            <TwitterLogo size={32} />
           </Link>
           <Link to="https://www.facebook.com/LeonielNacman0/">
             <FacebookLogo size={32} />
